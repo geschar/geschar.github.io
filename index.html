@@ -27,7 +27,7 @@ details {
 details > details {
   margin-top: 8px;
 }
-summary > h2, summary > h3 {
+summary > h2, summary > h3, summary > .card_title {
   display: inline;
 }
 summary > span,
@@ -73,7 +73,7 @@ hr {
 }
 .card {
   border-radius: 12px;
-  padding: 0 16px;
+  padding: 16px 16px 0;
   border: 1px solid #FFC736;
   margin-bottom: 16px;
 }
@@ -89,9 +89,20 @@ hr {
 
 <main>
 <div class="card">
-  <p><span class="bold">【緊急】ご注意</span><br><span class="updated_at">2023-10-03 09:09 更新</span>
+<details>
+  <summary><p class="card_title"><span class="bold">【緊急】板一覧の更新のご注意</span><br><span class="updated_at">2023-10-03 09:09 更新</span></summary>
   <p>現在、5chより提供されている板一覧 (https://menu.5ch.net/bbsmenu.html) が壊れており、Gescharで板一覧の更新・リセットが正常に行えない状態になっています。
   <p>5ch側かアプリ側が修正されるまで、板一覧のリセットは行わないようお願いします。
+</details>
+</div>
+
+<div class="card">
+<details>
+  <summary><p class="card_title"><span class="bold">【緊急】意図しない連投のご注意</span><br><span class="updated_at">2023-10-03 11:14 更新</span></summary>
+  <p>
+    現在、5chが不安定になっており、書き込みに成功した場合にも「504エラー」が返されることがあります。
+    エラーメッセージに「504 Gateway Timeout」が含まれていた場合、正常に書き込めている可能性がありますので、再投稿する前に一度スレッドを更新してご確認いただくことをおすすめします。
+  <p>アプリ側での修正はおそらく難しいため、5ch側の修正をお待ちください。
 </div>
 
 <details>
@@ -449,6 +460,7 @@ hr {
   <ul><li>一般的に期待される、指の動きに追随して動くタイプではありません。</ul>
   <ul><li>画像が拡大されていない状態でのみ機能します。</ul>
 <li>スレッド画面でキャッシュを削除した時の汚い挙動の改善
+<li>スレッド更新時に新着レスの件数を表示
 </ul>
 </details>
 
