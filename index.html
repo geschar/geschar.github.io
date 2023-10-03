@@ -34,6 +34,10 @@ summary > span {
   font-size: 0.8em;
   opacity: 0.8;
 }
+span.updated_at {
+  font-size: 0.8em;
+  opacity: 0.8;
+}
 h1 {
   font-size: 1.3rem;
 }
@@ -70,6 +74,12 @@ hr {
 .bold {
   font-weight: bold;
 }
+.card {
+  border-radius: 12px;
+  padding: 0 16px;
+  border: 1px solid #FFC736;
+  margin-bottom: 16px;
+}
 </style>
 </head>
 
@@ -81,13 +91,11 @@ hr {
 </header>
 
 <main>
-
-<details open>
-<summary><h2>【緊急】ご注意</h2></summary>
-<p>2023-10-03 09:09 更新
-<p>現在、5chより提供されている板一覧(https://menu.5ch.net/bbsmenu.html)が壊れており、Gescharで板一覧の更新・リセットを行った際に正常に取得ができない状態となっています。
-<p>5ch側かアプリ側が修正されるまで、板一覧のリセットは行わないようお願いします。
-</details>
+<div class="card">
+  <p><span class="bold">【緊急】ご注意</span><br><span class="updated_at">2023-10-03 09:09 更新</span>
+  <p>現在、5chより提供されている板一覧 (https://menu.5ch.net/bbsmenu.html) が壊れており、Gescharで板一覧の更新・リセットを行った際に正常に取得ができない状態となっています。
+  <p>5ch側かアプリ側が修正されるまで、板一覧のリセットは行わないようお願いします。
+</div>
 
 <details>
 <summary><h2>Gescharについて</h2></summary>
