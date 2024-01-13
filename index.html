@@ -74,6 +74,10 @@ hr {
 .bold {
   font-weight: bold;
 }
+.danger {
+  font-weight: bold;
+  color: #FFC736;
+}
 .card {
   border-radius: 12px;
   padding: 16px 16px 0;
@@ -455,8 +459,13 @@ img {
 <p class="details_top_note">
 BEログインページ（内蔵ブラウザ内でログインを行う必要があります）<br>
 <br>
-<a href="https://be.5ch.net">https://be.5ch.net</a><br>
-<br>
+<!--<a href="https://be.5ch.net">https://be.5ch.net</a><br>-->
+<span class="deleted">https://be.5ch.net</span><br>
+<span class="danger">
+  【更新】BEにログイン後、クッキーを削除してもログアウト状態に戻らないとのご連絡をいただきました。
+  BEログインのリンクについては一旦削除します。
+</span>
+<br><br>
 <span class="bold">「ログインボタンを押しても反応しないが、正常にログインはできる」</span>とのご連絡をいただきました。<br>
 また<span class="bold">「ログイン状態になると、上記ページが開けなくなる」</span>とのことです。<br>
 現在こちらにBEアカウントがなく動作確認ができていませんが、おそらくログイン後のページがポップアップか何かで開く仕様になっていて、内蔵ブラウザでは表示できていないのではないかと推測しています。<br>
