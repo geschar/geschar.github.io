@@ -5,8 +5,17 @@
     <meta http-equiv="refresh" content="0;URL=https://geschar.app/recents" />
     <title></title>
     <style>
+      :root {
+        color-scheme: light dark;
+        --background-color: #ffffff;
+      }
+      @media screen and (prefers-color-scheme: dark) {
+        :root {
+          --background-color: #22252a;
+        }
+      }
       * {
-        background-color: #22252a;
+        background-color: var(--background-color);
       }
     </style>
   </head>
